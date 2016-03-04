@@ -5,6 +5,7 @@
 ```
 $ service mysqld start
 $ service mysqld stop
+$ chkconfig mysqld on
 ```
 
 ## login
@@ -39,8 +40,6 @@ set password for root@localhost=password('hoge');
 > show tables;
 ```
 
----
-
 ## drop
 
 ```
@@ -59,9 +58,11 @@ set password for root@localhost=password('hoge');
 > exit
 ```
 
+---
+
 # postgresql
 
-## start stop
+## start stop auto-start
 
 ```
 $ service postgresql start

@@ -73,7 +73,12 @@ create table posts (
 
 ```
 >
-
+create table users (
+    id integer primary key autoincrement,
+    name text not null,
+    email text unique,
+    age integer default 20
+);
 ```
 
 ## show
