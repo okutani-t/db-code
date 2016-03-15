@@ -4,15 +4,14 @@
 
 ```
 >
-create table users (
-    id int not null auto_increment primary key,
-    name varchar(255),
-    email varchar(255) unique,
-    password char(32),
-    sex enum('male', 'female'),
-    memo text default 'sample memo',
-    created datetime
+create table posts
+(
+  id serial primary key,
+  title varchar(255) not null,
+  body text, sort_id int,
+  created timestamp default CURRENT_TIMESTAMP
 );
+
 ```
 
 ## show
