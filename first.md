@@ -18,7 +18,14 @@ $ mysql -u dbuser -p piyo_db
 ## root pass setting
 
 ```
-set password for root@localhost=password('hoge');
+> set password for root@localhost=password('hoge');
+```
+
+## show db users
+
+```
+$ mysql -u root
+> select user, host from mysql.user;
 ```
 
 ## create database
@@ -31,6 +38,9 @@ set password for root@localhost=password('hoge');
 
 ```
 > grant all on piyo_db.* to dbuser@localhost identified by 'password';
+or
+> CREATE USER dbuser@localhost IDENTIFIED BY 'password';
+> GRANT ALL ON piyo_db.* TO dbuser@localhost;
 ```
 
 ## show
@@ -43,6 +53,7 @@ set password for root@localhost=password('hoge');
 ## drop
 
 ```
+> drop user dbuser@localhost;
 > drop database piyo_db;
 ```
 
