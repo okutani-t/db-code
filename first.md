@@ -104,6 +104,9 @@ $ psql piyo_db
 ```
 $ psql -l
 > \l
+> \d
+> \d table_name
+> select * from table_name;
 ```
 
 ## drop
