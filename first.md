@@ -131,6 +131,13 @@ $ dropdb piyo_db
 $ sqlite3 piyo.sqlite3
 ```
 
+## show
+
+```
+> .tables
+> select * from users;
+```
+
 ## exit
 
 ```
